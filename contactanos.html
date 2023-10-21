@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" type="text/css" href="style_contactanos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="menu">
+        <a href="index.html"></a><a href="riego.html" ></a><a href="detectordenutrientes.html"></a><a href="miCultivo.html"></a><a href="historial.html"></a>
+    </div>
+    <div class="header">
+        <div class="logo_header">
+            <img src="imagenes/LOGO HIDRO (2) (1).png" height="100" alt="UTMAT Logo" loading="lazy"
+                style="margin-top: 8px;" />
+        </div>
+        <div class="list_header">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="conocenos.html">
+                    <li>Conocenos</li>
+                </a>
+                <a href="contactanos.html">
+                    <li>Contactanos</li>
+                </a>
+                <a href="catalogo.html">
+                    <li>Catálogo</li>
+                </a>
+                <!-- <button class="btn"><i class="fa fa-bars"></i></button> -->
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div id="contactanos">
+        <h1>Contactanos</h1>
+    </div>
+
+    <section>
+        <h2>Información de contacto</h2>
+        <p>¡Estamos encantados de saber de ti! Puedes ponerte en contacto con nosotros de las siguientes maneras:</p>
+
+        <address>
+            <strong>IRIS</strong><br>
+            Av. Gerónimo de la Cueva s/n, Villas del Río, 20126 Aguascalientes, Ags.<br> Aguascalientes,Ags<br>
+            20174
+        </address>
+
+        <p>Teléfono: <a href="tel:+123456789">33 29101485</a></p>
+        <p>Correo electrónico: <a href=>irishydrosense@gmail.com/a></p>
+    </section>
+
+    <section>
+        <h2>Formulario de contacto</h2>
+        <p>Si prefieres, también puedes enviarnos un mensaje a través de este formulario:</p>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Iris2023 . Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

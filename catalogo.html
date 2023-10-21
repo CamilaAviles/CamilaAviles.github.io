@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" type="text/css" href="style_catalogo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="menu">
+        <a href="index.html"></a><a href="riego.html" ></a><a href="detectordenutrientes.html"></a><a href="miCultivo.html"></a><a href="historial.html"></a>
+    </div>
+    <div class="header">
+        <div class="logo_header">
+            <img src="imagenes/LOGO HIDRO (2) (1).png" height="100" alt="UTMAT Logo" loading="lazy"
+                style="margin-top: 8px;" />
+        </div>
+        <div class="list_header">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="conocenos.html">
+                    <li>Conocenos</li>
+                </a>
+                <a href="contactanos.html">
+                    <li>Contactanos</li>
+                </a>
+                <a href="catalogo.html">
+                    <li>Catálogo</li>
+                </a>
+                <!-- <button class="btn"><i class="fa fa-bars"></i></button> -->
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+
+
+        <div id="contenidos">
+            <h2>Productos Disponibles</h2>
+
+            <!-- Primera sección de productos -->
+            <div class="product-card">
+                <img src="imagenes/pulsera2 (1).png" alt="IRIS">
+                <h3>IRIS</h3>
+                <p> "Interaccion Remota
+                    Inteligente con Sensores".
+                    Pulsera integrada con sensores de movimiento y de pulso cardíaco.
+                </p>
+                <p>Precio: $195</p>
+            </div>
+
+            <!-- Segunda sección de productos -->
+            <div class="product-card">
+                <img src="imagenes/WhatsApp Image 2023-10-21 at 9.15.52 AM.jpeg" alt="HydroSense">
+                <h3>HydroSense</h3>
+                <p>Innovar dispositivos que provean seguridad a los agricultores hidrocálidos y sus cultivos, evitando
+                    potenciales daños debido a la erosión..</p>
+                <p>Precio: $4,700</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: "Century gothic", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#menu {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 250px;
+      padding-right: 250px;*/
+    position: fixed;
+    width: 100%;
+
+}
+
+.list_header ul {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    padding-right: 30px;
+}
+
+.list_header li {
+    float: left;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+#list_header {
+    position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    margin-left: 750px;
+    width: 300px;
+}
+
+
+
+
+
+
+/*los palitos*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*Terminan los palitos*/
+
+
+.arrow1 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+.arrow2 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+
+
+
+/*botones de index principal*/
+.botones-container {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-bottom: 90px;
+    padding-right: 230px;
+}
+
+.botones-container a {
+    text-decoration: none;
+    padding: 20px 40px;
+    margin-left: 10px;
+    background-color: #204d35;
+    color: #fff;
+    border: 1px solid #543025;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+.botones-container a:hover {
+    background-color: #68ae7d;
+    border: 1px solid #20511c;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iniciar Sesion </title>
+</head>
+<body style="text-align: center;margin: 40px auto;">
+	<h1 style="color: rgb(4, 106, 45)">Inicio de sesión</h1>
+	<div style="width: 30%; margin: 50px auto; padding:20px;text-align: center;border-style: solid; border-color: rgb(0, 128, 28);">
+		<form name="Usuario">
+			Usuario: <input type="text" name="nombreUsuario" size="12"><br><br>
+			Password: <input type="password" name="password" size="12"><br><br>
+			<input type="button" value="Aceptar" onclick="Valida();" >
+			<button id="Acceder" style="visibility: hidden;"> <a style="text-decoration: none; color: unset;" href="home.html" id="Principal">Acceder al sitio</a></button>
+		</form>
+	</div>
+<!--Nombre:Maria Fernanda Rodriguez Macias-->
+<script>
+	var usuario="", contraseña="";
+	function Valida()
+	{
+		usuario=document.forms.Usuario.nombreUsuario.value;
+		contraseña=document.forms.Usuario.password.value;
+		if (usuario=="Hidrosens")
+			if (contraseña=="1234"){
+				alert("Acceso correcto");
+				document.getElementById('Acceder').style.visibility='visible';
+			}
+			else{
+				alert("Contraseña incorrecta");
+			}
+			else{
+				alert("usuario y/o contraseña incorrecto(s)");
+			}
+		}
+</script>
+</body>
+</html>

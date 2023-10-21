@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body style="text-align: center; margin: 40px auto;">
+    <h1 style="color: rgb(2, 105, 21)">Registro</h1>
+    <div style="width: 30%; margin: 50px auto; padding: 20px; text-align: center; border-style: solid; border-color: rgb(0, 128, 19);">
+        <h2>Registro</h2>
+        <form name="Registro">
+            Nombre de usuario: <input type="text" name="nombreUsuarioRegistro" size="12"><br><br>
+            Contraseña: <input type="password" name="passwordRegistro" size="12"><br><br>
+            Confirmar contraseña: <input type="password" name="confirmarPassword" size="12"><br><br>
+            <input type="button" value="Registrarse" onclick="Registrar();">
+        </form>
+        <button id="Acceder" style="visibility: hidden;"> <a style="text-decoration: none; color: unset;" href="home.html" id="Principal">Acceder al sitio</a></button>
+    </div>
+    <!--Nombre: Maria Fernanda Rodriguez Macias-->
+    <script>
+        var usuariosRegistrados = {};
+
+        function Registrar() {
+            var nuevoUsuario = document.forms.Registro.nombreUsuarioRegistro.value;
+            var nuevaContraseña = document.forms.Registro.passwordRegistro.value;
+            var confirmarContraseña = document.forms.Registro.confirmarPassword.value;
+
+            if (nuevoUsuario && nuevaContraseña && confirmarContraseña && nuevaContraseña === confirmarContraseña) {
+                usuariosRegistrados[nuevoUsuario] = nuevaContraseña;
+                alert("Registro exitoso");
+                document.getElementById('Acceder').style.visibility = 'visible';
+            } else {
+                alert("Por favor, complete todos los campos y asegúrese de que las contraseñas coincidan.");
+            }
+        }
+    </script>
+</body>
+</html>
+

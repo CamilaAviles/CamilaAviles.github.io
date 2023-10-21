@@ -1,0 +1,204 @@
+body {
+    font-family: "Century gothic", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+#menu {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 250px;
+      padding-right: 250px;*/
+
+    width: 100%;
+
+}
+
+.list_header ul {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    padding-right: 30px;
+}
+
+.list_header li {
+    float: left;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+#list_header {
+    position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    margin-left: 750px;
+    width: 300px;
+}
+
+
+
+/*los palitos*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*Terminan los palitos*/
+
+
+.arrow1 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+.arrow2 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+
+
+
+#contenido{
+background-color: rgb(255, 255, 255);
+height: 500px;
+margin: 40px;
+}
+
+footer {
+    background-color: #205c2c;
+    color: #fff;
+    text-align: center;
+    padding: auto;
+}
+
+.texto {
+    text-align: left;
+}
+
+.team{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    align-items: flex-start;
+}
+
+
+
+#columna1{
+width: 430px;
+margin-top: 10px;
+margin-right:10;
+margin-bottom: 10px;
+margin-left: 10px;
+
+}
+
+
+#contenido h1{
+color: rgb(20,92,84);
+font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*los palitos*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*Terminan los palitos*/
+
+
+.arrow1 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+.arrow2 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
